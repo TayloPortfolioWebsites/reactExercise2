@@ -1,5 +1,4 @@
-// import logo from './logo.svg';
-// import './App.css';
+import Header from "./components/Header";
 
 /*
 function App() {
@@ -49,6 +48,7 @@ function App() {
 export default App;
 */
 
+/*
 function App() {
   const name = 'tiff';
   // add const variable and assign a value of false boolean
@@ -61,6 +61,21 @@ function App() {
       <h2>I am new to JSX and I love it! {a ? 'yes': 'no'}</h2>
       <h2>{5+5}</h2>
       <h2>{b}</h2>
+    </div>
+  );
+}
+
+export default App;
+*/
+
+function App() {
+  const name = 'tiff';
+  // add const variable and assign a value of false boolean
+  const a = true;
+  const b = 5+5;
+  return (
+    <div className="container">
+      <Header/>
     </div>
   );
 }
