@@ -3,12 +3,15 @@ import PropTypes from 'prop-types'
 import Button from './Button.js'
 
 const Header = ({title}) => {
+    const onClick = ()=>{
+        alert('This is an example of an onClick event.');
+    }
   return (
-    <header>
+    <header className='header'>
         <h1 style={{textAlign: 'center', backgroundColor: 'yellow', color: 'blue'}}>
             RBSL TO-DO-APP
         </h1>
-        <Button text={'Add'} color={'green'}/>
+        <Button text={'Add'} color={'green'} onClick={onClick}/>
         <Button text={'Delete'} color={'red'}/>
         <Button text={'Create'} />
     </header>

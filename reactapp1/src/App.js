@@ -71,7 +71,7 @@ export default App;
 function App() {
   return (
     <div className="container">
-      <Header title={'Heading test'}/>
+      <Header/>
     </div>
   );
 }
