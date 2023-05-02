@@ -71,7 +71,7 @@ export default App;
 function App() {
   return (
     <div className="container">
-      <Header /*title='Hello Tiff'*//>
+      <Header title='Task Planner'/>
     </div>
   );
 }
