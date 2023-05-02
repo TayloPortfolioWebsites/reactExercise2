@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Button from './Button.js'
 
 const Header = ({title}) => {
   return (
@@ -7,9 +8,9 @@ const Header = ({title}) => {
         <h1 style={{textAlign: 'center', backgroundColor: 'yellow', color: 'blue'}}>
             RBSL TO-DO-APP
         </h1>
-        <h2 style={headingStyles}>
-            {title}
-        </h2>
+        <Button text={'Add'} color={'green'}/>
+        <Button text={'Delete'} color={'red'}/>
+        <Button text={'Create'} />
     </header>
   )
 }
