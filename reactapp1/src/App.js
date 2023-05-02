@@ -69,13 +69,9 @@ export default App;
 */
 
 function App() {
-  const name = 'tiff';
-  // add const variable and assign a value of false boolean
-  const a = true;
-  const b = 5+5;
   return (
     <div className="container">
-      <Header/>
+      <Header title='Hello Tiff'/>
     </div>
   );
 }
