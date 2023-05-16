@@ -4,6 +4,7 @@ import AddTask from "./components/AddTask";
 import { useState } from "react";
 
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false);
   const [task, setTasks] = useState([
     {
         id: 1,
@@ -56,8 +57,8 @@ const toggleActive = (id) => {
 
   return (
     <div className="container animate__heartBeat">
-      <Header/>
-      <AddTask onAdd={addTask}/>
+      <Header onAdd={()=>setShowAddTask(!showAddTask)} showAdd={showAddTask}/>
+      {showAddTask && <AddTask onAdd={addTask}/>}
       {task.length > 0 ? <Tasks task={task} onDelete={deleteTask} onToggle={toggleActive}/> : 'No Tasks to Accomplish.'}
     </div>
   );
