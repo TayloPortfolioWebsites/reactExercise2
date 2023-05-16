@@ -96,12 +96,27 @@ function App() {
         day: 'April 6, 2023',
         reminder: false
     }
-]);
+]); // end of setTasks
+
+// DELETE TASK
+
+const deleteTask = (id) => {
+  alert('delete test',id);
+  console.log('This is a delete task code block function.',id);
+}
+
+// TOGGLE TASK
+
+const toggleActive = (id) => {
+  setTasks(
+    task.map((task)=> task.id === id ? {...task, reminder: !task.reminder}: task)
+  )
+}
 
   return (
-    <div className="container">
+    <div className="container animate__heartBeat">
       <Header/>
-      <Tasks task={task}/>
+      {task.length > 0 ? <Tasks task={task} onDelete={deleteTask} onToggle={toggleActive}/> : 'No Tasks to Accomplish.'}
     </div>
   );
 }

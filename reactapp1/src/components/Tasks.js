@@ -1,13 +1,13 @@
 import Task from "./Task"
 
-const Tasks = ({task})=>{
+const Tasks = ({task, onDelete, onToggle})=>{
 
     return(
         // tasks.push will not work
         // setTasks([...task, {}])
         <>
         {
-            task.map((task)=>(<Task key={task.id} task={task}/>))
+            task.map((task)=>(<Task key={task.id} task={task} onDelete={onDelete} onToggle={onToggle}/>))
         }
         </>
     )
