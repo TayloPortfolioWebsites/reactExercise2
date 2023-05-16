@@ -1,3 +1,22 @@
+import Task from "./Task"
+
+const Tasks = ({task})=>{
+
+    return(
+        // tasks.push will not work
+        // setTasks([...task, {}])
+        <>
+        {
+            task.map((task)=>(<Task key={task.id} task={task}/>))
+        }
+        </>
+    )
+}
+
+export default Tasks
+
+
+/*
 const task = [
     {
         id: 1,
@@ -30,10 +49,11 @@ const Tasks = ()=>{
         // <div>LIST OF TASKS</div>
         <>
         {
-            task.map((task)=>(<h3>{task.text}</h3>))
+            task.map((task)=>(<h3 key={task.id}>{task.day}</h3>))
         }
         </>
     )
 }
 
 export default Tasks
+*/

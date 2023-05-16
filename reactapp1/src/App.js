@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
+import { useState } from "react";
 
 /*
 function App() {
@@ -70,10 +71,37 @@ export default App;
 */
 
 function App() {
+  const [task, setTasks] = useState([
+    {
+        id: 1,
+        text: 'Watch Netflix',
+        day: 'April 3, 2023',
+        reminder: true
+    },
+    {
+        id: 2,
+        text: 'Play Witcher III',
+        day: 'April 4, 2023',
+        reminder: true
+    },
+    {
+        id: 3,
+        text: 'Buy Groceries',
+        day: 'April 5, 2023',
+        reminder: false
+    },
+    {
+        id: 4,
+        text: 'Study exercise for web dev',
+        day: 'April 6, 2023',
+        reminder: false
+    }
+]);
+
   return (
     <div className="container">
       <Header/>
-      <Tasks/>
+      <Tasks task={task}/>
     </div>
   );
 }
