@@ -33,15 +33,17 @@ function App() {
 
 // ADD TASK
 
-const addTask = (task) =>{
-  console.log(task);
+const addTask = (tasklist) =>{
+  const id = Math.floor(Math.random() * 10000) + 1;
+  
+  const newTask = {id, ...tasklist}
+  setTasks([...task, newTask]);
 }
 
 // DELETE TASK
 
 const deleteTask = (id) => {
-  alert('delete test',id);
-  console.log('This is a delete task code block function.',id);
+  // setTasks(task.filter((task) => task.id !== id));
 }
 
 // TOGGLE TASK
