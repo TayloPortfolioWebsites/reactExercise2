@@ -11,7 +11,7 @@ const Header = ({title, onAdd, showAdd}) => {
         <h1 style={{textAlign: 'center', backgroundColor: 'yellow', color: 'blue'}}>
             RBSL TO-DO-APP
         </h1>
-        <Button text={showAdd ? 'Close' : 'Add tasks'} color={'green'} onClick={onAdd}/>
+        <Button text={showAdd ? 'Close' : 'Add tasks'} color={showAdd ? 'red' : 'green'} clickEvent={onAdd}/>
         {/* <Button text={'Delete'} color={'red'}/>
         <Button text={'Create'} /> */}
     </header>

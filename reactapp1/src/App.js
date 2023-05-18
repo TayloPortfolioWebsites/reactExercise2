@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
-import AddTask from "./components/AddTask";
 import { useState } from "react";
+import AddTask from "./components/AddTask";
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
@@ -44,7 +44,7 @@ const addTask = (tasklist) =>{
 // DELETE TASK
 
 const deleteTask = (id) => {
-  // setTasks(task.filter((task) => task.id !== id));
+  setTasks(task.filter((task) => task.id !== id));
 }
 
 // TOGGLE TASK
