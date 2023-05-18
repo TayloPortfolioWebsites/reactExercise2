@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": 2,
-      "text": "Play Witcher III",
-      "day": "April 4, 2023",
-      "reminder": true
-    },
-    {
       "id": 3,
       "text": "Buy Groceries",
       "day": "April 5, 2023",
@@ -17,6 +11,12 @@
       "text": "Study exercise for web dev",
       "day": "April 6, 2023",
       "reminder": false
+    },
+    {
+      "text": "Go to School",
+      "day": "May 19, 2023",
+      "reminder": "false",
+      "id": 5
     }
   ]
 }
