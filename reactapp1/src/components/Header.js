@@ -8,8 +8,8 @@ const Header = ({title, onAdd, showAdd}) => {
     // }
   return (
     <header className='header'>
-        <h1 style={{textAlign: 'center', backgroundColor: 'yellow', color: 'blue'}}>
-            RBSL TO-DO-APP
+        <h1 style={{textAlign: 'left'}}>
+            TIFF TO-DO-APP
         </h1>
         <Button text={showAdd ? 'Close' : 'Add tasks'} color={showAdd ? 'red' : 'green'} clickEvent={onAdd}/>
         {/* <Button text={'Delete'} color={'red'}/>
