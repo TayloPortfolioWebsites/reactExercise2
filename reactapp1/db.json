@@ -1,19 +1,28 @@
 {
-  "posts": [
+  "tasks": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "text": "Watch Netflix",
+      "day": "April 3, 2023",
+      "reminder": true
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "text": "Play Witcher III",
+      "day": "April 4, 2023",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Buy Groceries",
+      "day": "April 5, 2023",
+      "reminder": false
+    },
+    {
+      "id": 4,
+      "text": "Study exercise for web dev",
+      "day": "April 6, 2023",
+      "reminder": false
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
