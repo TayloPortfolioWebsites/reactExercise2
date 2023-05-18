@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Watch Netflix",
-      "day": "April 3, 2023",
-      "reminder": true
-    },
-    {
       "id": 2,
       "text": "Play Witcher III",
       "day": "April 4, 2023",

@@ -25,7 +25,6 @@ function App() {
   }
 
 // ADD TASK
-
 const addTask = (tasklist) =>{
   const id = Math.floor(Math.random() * 10000) + 1;
   
@@ -34,13 +33,20 @@ const addTask = (tasklist) =>{
 }
 
 // DELETE TASK
-
+/*
 const deleteTask = (id) => {
+  setTasks(task.filter((task) => task.id !== id));
+}
+*/
+
+const deleteTask = async (id) => {
+  await fetch(`http://localhost:5000/tasks/${id}`,{
+    method: 'DELETE'
+  });
   setTasks(task.filter((task) => task.id !== id));
 }
 
 // TOGGLE TASK
-
 const toggleActive = (id) => {
   setTasks(
     task.map((task)=> task.id === id ? {...task, reminder: !task.reminder}: task)
